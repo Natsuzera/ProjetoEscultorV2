@@ -1,0 +1,25 @@
+cmake_minimum_required(VERSION 3.10)
+project(Escultor)
+
+set(CMAKE_CXX_STANDARD 11)
+
+# Adiciona o diretório de headers ao caminho de inclusão
+include_directories(${PROJECT_SOURCE_DIR}/headers)
+
+# Lista todos os arquivos fonte
+set(SOURCES
+    src/CutBox.cpp
+    src/CutEllipsoid.cpp
+    src/CutSphere.cpp
+    src/CutVoxel.cpp
+    src/Interpretador.cpp
+    src/PutBox.cpp
+    src/PutEllipsoid.cpp
+    src/PutSphere.cpp
+    src/PutVoxel.cpp
+    src/Sculptor.cpp
+    main.cpp
+)
+
+# Cria o executável
+add_executable(Escultor ${SOURCES})
