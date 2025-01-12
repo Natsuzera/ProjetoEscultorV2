@@ -18,6 +18,10 @@ Este projeto é a continuação da ferramenta Escultor 3D, desenvolvida em **C++
 - **Exportação no Formato OFF:**
   - Salva o modelo criado no formato OFF, incluindo cores e transparência para visualização em ferramentas especializadas.
 
+### Diretórios
+- **`input/`**: Contém os arquivos de entrada com os comandos, como `teste.txt`.
+- **`output/`**: Diretório onde o arquivo de saída no formato OFF será gerado (exemplo: `escultor3d.off`).
+
 ---
 
 ## 📋 Como Usar
@@ -27,7 +31,7 @@ Insira os comandos no arquivo `input/teste.txt` com o formato:
 dim 30 30 30
 putvoxel 5 5 5 1.0 0.0 0.0 1.0
 putsphere 15 15 15 5 0.0 1.0 0.0 0.8
-
+```
 
 ### 2. Compile o Projeto
 Certifique-se de que possui um compilador C++ (como `g++`). Compile o projeto com o seguinte comando:
